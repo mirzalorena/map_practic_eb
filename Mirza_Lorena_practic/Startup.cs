@@ -12,6 +12,8 @@ using System.Threading.Tasks;
 using Mirza_Lorena_practic.Data;
 using Microsoft.EntityFrameworkCore;
 
+using Mirza_Lorena_practic.Hubs;
+
 namespace Mirza_Lorena_practic
 {
     public class Startup
@@ -29,6 +31,8 @@ namespace Mirza_Lorena_practic
             services.AddControllersWithViews();
 
             services.AddDbContext<MovieShopContext>(options =>options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,6 +60,7 @@ namespace Mirza_Lorena_practic
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapHub<ChatHub>("/chathub");
             });
         }
     }

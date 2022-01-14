@@ -23,7 +23,10 @@ namespace Mirza_Lorena_practic.Controllers
             _context = context;
         }
 
-
+        public IActionResult Chat()
+        {
+            return View();
+        }
         public IActionResult Index()
         {
             return View();

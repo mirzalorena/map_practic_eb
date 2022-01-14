@@ -11,6 +11,8 @@ namespace Mirza_Lorena_practic.Models
         public int CustomerID { get; set; }
         public int MovieID { get; set; }
 
+        public DateTime OrderDate { get; set; }
+
         public Customer Customer { get; set; }
         public Movie Movie { get; set; }
     }

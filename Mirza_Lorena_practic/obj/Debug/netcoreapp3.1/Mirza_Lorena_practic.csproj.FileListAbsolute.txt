@@ -174,3 +174,9 @@ C:\Users\Asus\OneDrive\Documents\facultate\FSEGA\map\Mirza_Lorena_practic\Mirza_
 C:\Users\Asus\OneDrive\Documents\facultate\FSEGA\map\Mirza_Lorena_practic\Mirza_Lorena_practic\Mirza_Lorena_practic\obj\Debug\netcoreapp3.1\Razor\Views\Movies\Details.cshtml.g.cs
 C:\Users\Asus\OneDrive\Documents\facultate\FSEGA\map\Mirza_Lorena_practic\Mirza_Lorena_practic\Mirza_Lorena_practic\obj\Debug\netcoreapp3.1\Razor\Views\Movies\Edit.cshtml.g.cs
 C:\Users\Asus\OneDrive\Documents\facultate\FSEGA\map\Mirza_Lorena_practic\Mirza_Lorena_practic\Mirza_Lorena_practic\obj\Debug\netcoreapp3.1\Razor\Views\Movies\Index.cshtml.g.cs
+C:\Users\Asus\OneDrive\Documents\facultate\FSEGA\map\Mirza_Lorena_practic\Mirza_Lorena_practic\Mirza_Lorena_practic\obj\Debug\netcoreapp3.1\Razor\Views\Home\Statistics.cshtml.g.cs
+C:\Users\Asus\OneDrive\Documents\facultate\FSEGA\map\Mirza_Lorena_practic\Mirza_Lorena_practic\Mirza_Lorena_practic\obj\Debug\netcoreapp3.1\Razor\Views\Publishers\Create.cshtml.g.cs
+C:\Users\Asus\OneDrive\Documents\facultate\FSEGA\map\Mirza_Lorena_practic\Mirza_Lorena_practic\Mirza_Lorena_practic\obj\Debug\netcoreapp3.1\Razor\Views\Publishers\Delete.cshtml.g.cs
+C:\Users\Asus\OneDrive\Documents\facultate\FSEGA\map\Mirza_Lorena_practic\Mirza_Lorena_practic\Mirza_Lorena_practic\obj\Debug\netcoreapp3.1\Razor\Views\Publishers\Details.cshtml.g.cs
+C:\Users\Asus\OneDrive\Documents\facultate\FSEGA\map\Mirza_Lorena_practic\Mirza_Lorena_practic\Mirza_Lorena_practic\obj\Debug\netcoreapp3.1\Razor\Views\Publishers\Edit.cshtml.g.cs
+C:\Users\Asus\OneDrive\Documents\facultate\FSEGA\map\Mirza_Lorena_practic\Mirza_Lorena_practic\Mirza_Lorena_practic\obj\Debug\netcoreapp3.1\Razor\Views\Publishers\Index.cshtml.g.cs

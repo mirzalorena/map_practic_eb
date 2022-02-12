@@ -18,12 +18,12 @@ namespace Mirza_Lorena_practic.Data
             }
             var Movies = new Movie[]
             {
- new Movie{Title="Baltagul",Director="MihailSadoveanu",Price=Decimal.Parse("22")},
- new Movie{Title="Enigma Otiliei",Director="GeorgeCalinescu",Price=Decimal.Parse("18")},
- new Movie{Title="Maytrei",Director="MirceaEliade",Price=Decimal.Parse("27")},
- new Movie{Title="Panza de paianjen",Director="CellaSerghi",Price=Decimal.Parse("45")},
- new Movie{Title="Fata de hartie",Director="GuillameMusso",Price=Decimal.Parse("38")},
- new Movie{Title="De veghe in lanul de secara",Director="J.D.Salinger",Price=Decimal.Parse("28")},
+ new Movie{Title="Pulp Fiction",Director="Quentin Tarantino",Price=Decimal.Parse("22")},
+ new Movie{Title="The Guard",Director="John Michael McDonagh",Price=Decimal.Parse("18")},
+ new Movie{Title="Moonrise Kingdom",Director="Wes Anderson",Price=Decimal.Parse("27")},
+ new Movie{Title="Gravity",Director="Alfonso Cuarón",Price=Decimal.Parse("45")},
+ new Movie{Title="Snowpiercer",Director="Joon-ho Bong",Price=Decimal.Parse("38")},
+ new Movie{Title="Birdman",Director="Alejandro González Iñárritu",Price=Decimal.Parse("28")},
             };
             foreach (Movie b in Movies)
             {
@@ -33,8 +33,8 @@ namespace Mirza_Lorena_practic.Data
             var customers = new Customer[]
             {
 
- new Customer{CustomerID=1050,Name="PopescuMarcela",BirthDate=DateTime.Parse("1979-09-01")},
- new Customer{CustomerID=1045,Name="MihailescuCornel",BirthDate=DateTime.Parse("1969-07-08")},
+ new Customer{CustomerID=1050,Name="Popescu Marcela",BirthDate=DateTime.Parse("1979-09-01")},
+ new Customer{CustomerID=1045,Name="Mihailescu Cornel",BirthDate=DateTime.Parse("1969-07-08")},
 
           };
             foreach (Customer c in customers)
@@ -59,9 +59,9 @@ namespace Mirza_Lorena_practic.Data
             var publishers = new Publisher[]
             {
 
- new Publisher{PublisherName="Humanitas",Adress="Str. Aviatorilor, nr. 40,Bucuresti"},
- new Publisher{PublisherName="Nemira",Adress="Str. Plopilor, nr. 35,Ploiesti"},
- new Publisher{PublisherName="Paralela 45",Adress="Str. Cascadelor, nr.22, Cluj-Napoca"},
+ new Publisher{PublisherName="Warner Bros",Adress="Str. Aviatorilor, nr. 40,Bucuresti"},
+ new Publisher{PublisherName="Sony Pictures Motion Picture Group",Adress="Str. Plopilor, nr. 35,Ploiesti"},
+ new Publisher{PublisherName="Universal Pictures",Adress="Str. Cascadelor, nr.22, Cluj-Napoca"},
             };
             foreach (Publisher p in publishers)
             {
@@ -71,31 +71,31 @@ namespace Mirza_Lorena_practic.Data
             var PublishedMovies = new PublishedMovie[]
             {
  new PublishedMovie {
- MovieID = Movies.Single(c => c.Title == "Maytrei" ).ID,
+ MovieID = Movies.Single(c => c.Title == "Gravity" ).ID,
  PublisherID = publishers.Single(i => i.PublisherName ==
-"Humanitas").ID
+"Warner Bros").ID
  },
  new PublishedMovie {
- MovieID = Movies.Single(c => c.Title == "Enigma Otiliei" ).ID,
+ MovieID = Movies.Single(c => c.Title == "Snowpiercer" ).ID,
 PublisherID = publishers.Single(i => i.PublisherName ==
-"Humanitas").ID
+"Universal Pictures").ID
  },
  new PublishedMovie {
- MovieID = Movies.Single(c => c.Title == "Baltagul" ).ID,
+ MovieID = Movies.Single(c => c.Title == "Birdman" ).ID,
  PublisherID = publishers.Single(i => i.PublisherName ==
-"Nemira").ID
+"Sony Pictures Motion Picture Group").ID
  },
  new PublishedMovie {
- MovieID = Movies.Single(c => c.Title == "Fata de hartie" ).ID,
-PublisherID = publishers.Single(i => i.PublisherName == "Paralela45").ID
+ MovieID = Movies.Single(c => c.Title == "Pulp Fiction" ).ID,
+PublisherID = publishers.Single(i => i.PublisherName == "Universal Pictures").ID
  },
  new PublishedMovie {
- MovieID = Movies.Single(c => c.Title == "Panza de paianjen" ).ID,
-PublisherID = publishers.Single(i => i.PublisherName == "Paralela45").ID
+ MovieID = Movies.Single(c => c.Title == "The Guard" ).ID,
+PublisherID = publishers.Single(i => i.PublisherName == "Warner Bros").ID
  },
  new PublishedMovie {
- MovieID = Movies.Single(c => c.Title == "De veghe in lanul desecara" ).ID,
- PublisherID = publishers.Single(i => i.PublisherName == "Paralela45").ID
+ MovieID = Movies.Single(c => c.Title == "Moonrise Kingdom" ).ID,
+ PublisherID = publishers.Single(i => i.PublisherName == "Universal Picture").ID
  },
             };
             foreach (PublishedMovie pb in PublishedMovies)

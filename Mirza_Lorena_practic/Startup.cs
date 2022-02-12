@@ -33,6 +33,12 @@ namespace Mirza_Lorena_practic
             services.AddDbContext<MovieShopContext>(options =>options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddSignalR();
+
+            services.AddAuthorization(opts => {
+                opts.AddPolicy("OnlySales", policy => {
+                    policy.RequireClaim("Department", "Sales");
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

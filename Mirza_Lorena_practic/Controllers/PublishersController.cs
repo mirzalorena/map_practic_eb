@@ -7,11 +7,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Mirza_Lorena_practic.Data;
 using Mirza_Lorena_practic.Models;
+using Microsoft.AspNetCore.Authorization;
 
 using Mirza_Lorena_practic.Models.MovieShopViewModels;
 
 namespace Mirza_Lorena_practic.Controllers
 {
+    [Authorize(Policy = "OnlySales")]
     public class PublishersController : Controller
     {
         private readonly MovieShopContext _context;
